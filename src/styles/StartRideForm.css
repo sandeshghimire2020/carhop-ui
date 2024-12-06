@@ -1,0 +1,54 @@
+.start-ride-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.start-ride-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.start-ride-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.start-ride-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.vehicle-details {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.vehicle-details p {
+  margin: 5px 0;
+}
+
+.start-ride-form .btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.start-ride-form .btn:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,42 @@
+.homepage {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.ride-results {
+  margin-top: 20px;
+}
+
+.ride-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
