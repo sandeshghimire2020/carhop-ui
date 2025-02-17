@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useTheme } from '../context/ThemeContext';
 import { getUserProfile, updateUserProfile } from '../services/userService';
 import '../styles/ProfilePage.css';
 
 const ProfilePage = () => {
+  const { theme } = useTheme();
   const userId = localStorage.getItem('userId'); // Retrieve user ID from localStorage
   const [profile, setProfile] = useState(null); // Store profile data
   const [isEditing, setIsEditing] = useState(false); // Toggle between view and edit modes
@@ -55,7 +57,7 @@ const ProfilePage = () => {
   }
 
   return (
-    <div className="profile-page">
+    <div className={`profile-page ${theme}`}>
       <h2>{isEditing ? 'Edit Profile' : 'View Profile'}</h2>
       {!isEditing ? (
         <div>

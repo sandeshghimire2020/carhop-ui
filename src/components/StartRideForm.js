@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../styles/StartRideForm.css';
 import { startRide } from '../services/rideService';
 import { getUserProfile } from '../services/userService';
+import { useTheme } from '../context/ThemeContext';
 
 const StartRideForm = () => {
+  const { theme } = useTheme();
   const [formData, setFormData] = useState({
     originAddress: '',
     originCity: '',
@@ -74,7 +76,7 @@ const StartRideForm = () => {
   };
 
   return (
-    <form className="start-ride-form" onSubmit={handleSubmit}>
+    <form className={`search-form ${theme}`} onSubmit={handleSubmit}>
       <h2>Start a Ride</h2>
       {vehicle ? (
         <div className="vehicle-details">

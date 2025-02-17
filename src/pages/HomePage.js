@@ -2,21 +2,22 @@ import React, { useState } from 'react';
 import SearchForm from '../components/SearchForm';
 import StartRideForm from '../components/StartRideForm';
 import '../styles/HomePage.css';
+import { useTheme } from '../context/ThemeContext'; // Import the useTheme hook
 
 const HomePage = () => {
-  const [activeTab, setActiveTab] = useState('search'); // Manage active tab
-  const [searchResults, setSearchResults] = useState([]); // Store search results
+  const [activeTab, setActiveTab] = useState('search');
+  const [searchResults, setSearchResults] = useState([]);
+  const { theme } = useTheme(); // Use the theme context
 
   const handleTabSwitch = (tab) => {
     setActiveTab(tab);
     if (tab === 'start') {
-      setSearchResults([]); // Clear search results when switching to Start a Ride
+      setSearchResults([]);
     }
   };
 
   return (
-    <div className="homepage">
-      {/* Tabs */}
+    <div className={`homepage ${theme}`}> {/* Apply theme class */}
       <div className="tabs">
         <button
           className={`tab ${activeTab === 'search' ? 'active' : ''}`}
@@ -32,7 +33,6 @@ const HomePage = () => {
         </button>
       </div>
 
-      {/* Tab Content */}
       <div className="tab-content">
         {activeTab === 'search' && (
           <div>

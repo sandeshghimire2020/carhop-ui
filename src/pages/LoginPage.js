@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 import '../styles/LoginPage.css';
 
 const LoginPage = () => {
+  const { theme } = useTheme();
   const [userId, setUserId] = useState('');
   const navigate = useNavigate();
 
@@ -17,7 +19,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-page">
+    <div className={`login-page ${theme}`}>
       <h2>Enter User ID</h2>
       <form className="login-form" onSubmit={handleSubmit}>
         <input

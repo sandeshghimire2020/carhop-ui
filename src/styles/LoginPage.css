@@ -28,3 +28,13 @@
 .login-form .btn:hover {
   background-color: #0056b3;
 }
+
+.login-page.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.login-page.dark {
+  background-color: #333333;
+  color: #ffffff;
+}

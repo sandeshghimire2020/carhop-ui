@@ -28,3 +28,13 @@
 .profile-page button {
   margin-right: 10px;
 }
+
+.profile-page.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.profile-page.dark {
+  background-color: #333333;
+  color: #ffffff;
+}

@@ -9,7 +9,6 @@
 .navbar-logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
 }
 
 .navbar-links {
@@ -24,10 +23,62 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: white;
   font-size: 1em;
 }
 
+/* Light theme styles */
+.navbar.light {
+  color: #000000;
+}
+
+.navbar.light .navbar-links a {
+  color: #000000;
+}
+
+.navbar.light .dropdown-menu {
+  background-color: white;
+  color: #000000;
+}
+
+.navbar.light .dropdown-menu a {
+  color: #000000;
+}
+
+.navbar.light .dropdown-logout-btn {
+  color: #000000; 
+}
+
+.navbar.light .dropdown-logout-btn:hover {
+  color: red; /* Change to red on hover */
+}
+
+/* Dark theme styles */
+.navbar.dark {
+  color: #ffffff;
+}
+
+.navbar.dark .navbar-links a {
+  color: #ffffff;
+}
+
+.navbar.dark .dropdown-menu {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.navbar.dark .dropdown-menu a {
+  color: #ffffff;
+}
+
+.navbar.dark .dropdown-logout-btn {
+  color: #ffffff; 
+}
+
+.navbar.dark .dropdown-logout-btn:hover {
+  color: red; 
+}
+
+/* Dropdown styles */
 .profile-dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -37,7 +88,6 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
   list-style: none;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -49,20 +99,25 @@
 
 .dropdown-menu a {
   text-decoration: none;
-  color: black;
 }
 
 .dropdown-logout-btn {
   background: none;
   border: none;
-  color: black;
   font-size: 1em;
   cursor: pointer;
   text-align: left;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
-.dropdown-logout-btn:hover {
-  color: red;
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 60px;
+  width: 60px;
 }

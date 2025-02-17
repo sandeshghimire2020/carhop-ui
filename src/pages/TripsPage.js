@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { fetchUserRequests, cancelRideRequest } from '../services/rideService';
 import '../styles/TripsPage.css';
+import { useTheme } from '../context/ThemeContext';
 
 const TripsPage = () => {
+  const { theme } = useTheme();
   const [requests, setRequests] = useState([]);
   const loggedInUserId = localStorage.getItem('userId');
 
@@ -24,7 +26,7 @@ const TripsPage = () => {
   };
 
   return (
-    <div className="trips-page">
+    <div className={`trips-page ${theme}`}>
       <h2>My Trips</h2>
       <div>
         {requests.length > 0 ? (

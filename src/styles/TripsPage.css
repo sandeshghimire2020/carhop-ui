@@ -23,3 +23,15 @@
   border-radius: 5px;
   background-color: #f9f9f9;
 }
+
+.ride-card.light {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ddd;
+}
+
+.ride-card.dark {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #555;
+}

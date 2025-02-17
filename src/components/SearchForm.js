@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/SearchForm.css';
 import { searchRides } from '../services/rideService';
+import { useTheme } from '../context/ThemeContext';
 
 const SearchForm = ({ onSearchResults }) => {
+  const { theme } = useTheme();
   const [formData, setFormData] = useState({
     originCity: '',
     originState: '',
@@ -28,7 +30,7 @@ const SearchForm = ({ onSearchResults }) => {
   };
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form className={`search-form ${theme}`} onSubmit={handleSubmit}>
       <input
         type="text"
         name="originCity"

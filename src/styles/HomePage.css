@@ -40,3 +40,13 @@
   margin-bottom: 10px;
   background-color: #f9f9f9;
 }
+
+.homepage.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.homepage.dark {
+  background-color: #333333;
+  color: #ffffff;
+}

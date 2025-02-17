@@ -22,3 +22,13 @@
 .search-form .btn:hover {
   background-color: #45a049;
 }
+
+.search-form.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-form.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
